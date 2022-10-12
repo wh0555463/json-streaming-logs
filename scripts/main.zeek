@@ -52,7 +52,7 @@ function add_json_streaming_log_extension(path: string): JsonStreamingExtension
 	}
 
 # We get the log suffix just to be safe.
-global log_suffix = getenv("ZEEK_LOG_SUFFIX") == "" ? "log" : getenv("ZEEK_LOG_SUFFIX");
+global log_suffix = getenv("BRO_LOG_SUFFIX") == "" ? "log" : getenv("BRO_LOG_SUFFIX");
 
 function rotate_logs(info: Log::RotationInfo): bool
 	{
